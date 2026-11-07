@@ -60,7 +60,7 @@ export const DashboardSidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) =>
         <div className="h-20 px-6 flex items-center justify-between border-b border-forest-light/40 bg-forest-dark">
           <Link to="/dashboard" className="flex items-center gap-3">
             <img 
-              src="/logo-placeholder.svg" 
+              src="./logo-placeholder.svg" 
               alt="Logo KK-DMS" 
               className="w-10 h-10 object-contain bg-white rounded-full p-1"
             />

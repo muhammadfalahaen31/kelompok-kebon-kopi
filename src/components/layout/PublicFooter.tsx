@@ -12,7 +12,7 @@ export const PublicFooter: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img 
-                src="/logo-placeholder.svg" 
+                src="./logo-placeholder.svg" 
                 alt="Logo Kelompok Kebon Kopi" 
                 className="w-12 h-12 object-contain bg-white rounded-full p-1"
               />

@@ -111,7 +111,7 @@ export const BerandaPage: React.FC = () => {
               <div className="w-full max-w-md bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100 relative">
                 <div className="flex items-center gap-4 pb-6 border-b border-gray-100">
                   <img 
-                    src="/logo-placeholder.svg" 
+                    src="./logo-placeholder.svg" 
                     alt="Logo Kelompok Kebon Kopi" 
                     className="w-16 h-16 object-contain bg-canvas rounded-full p-2 border border-olive-100"
                   />

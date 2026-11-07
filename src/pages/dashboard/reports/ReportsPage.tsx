@@ -146,7 +146,7 @@ export const ReportsPage: React.FC = () => {
             <div className="border-b-2 border-forest pb-4 flex items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <img 
-                  src="/logo-placeholder.svg" 
+                  src="./logo-placeholder.svg" 
                   alt="Logo Kelompok Kebon Kopi" 
                   className="w-14 h-14 object-contain"
                 />

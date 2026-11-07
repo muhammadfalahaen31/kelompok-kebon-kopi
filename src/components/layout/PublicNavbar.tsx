@@ -28,7 +28,7 @@ export const PublicNavbar: React.FC = () => {
           {/* Logo & Identity */}
           <Link to="/" className="flex items-center gap-3 group">
             <img 
-              src="/logo-placeholder.svg" 
+              src="./logo-placeholder.svg" 
               alt="Logo Kelompok Kebon Kopi" 
               className="w-12 h-12 object-contain transition-transform group-hover:scale-105"
             />
