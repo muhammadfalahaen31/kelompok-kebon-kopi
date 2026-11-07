@@ -10,27 +10,31 @@ echo.
 echo Website siap dipublikasikan ke domain resmi:
 echo https://project-kebon-kopi.web.app
 echo.
-echo Langkah 1: Memeriksa dan Menghubungkan Akun Google / Firebase Anda...
-echo (Jendela browser akan terbuka, cukup klik akun Google Anda dan klik Izinkan)
-echo.
 cd /d "%~dp0"
 set "PATH=%~dp0.tools\nodejs;%PATH%"
 
-call npx --yes firebase-tools login
+echo Memeriksa koneksi dan modul Firebase...
+echo (Harap tunggu, proses ini membutuhkan waktu 1-2 menit pada percobaan pertama)...
+echo.
+
+call "%~dp0.tools\nodejs\node.exe" "%~dp0.tools\nodejs\node_modules\npm\bin\npx-cli.js" --yes firebase-tools login
+
 if %ERRORLEVEL% NEQ 0 (
     echo.
-    echo [PERINGATAN] Login Firebase dibatalkan atau belum selesai.
-    echo Silakan coba jalankan file ini kembali.
+    echo =======================================================================
+    echo [CATATAN] Jendela login Firebase belum selesai atau dibatalkan.
+    echo =======================================================================
+    echo.
     pause
     exit /b
 )
 
 echo.
 echo =======================================================================
-echo Langkah 2: Mengunggah Website ke Firebase Hosting...
+echo Mengunggah file website ke Firebase Hosting...
 echo =======================================================================
 echo.
-call npx --yes firebase-tools deploy --only hosting --project project-kebon-kopi
+call "%~dp0.tools\nodejs\node.exe" "%~dp0.tools\nodejs\node_modules\npm\bin\npx-cli.js" --yes firebase-tools deploy --only hosting --project project-kebon-kopi
 
 if %ERRORLEVEL% EQU 0 (
     echo.
